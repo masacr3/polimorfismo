@@ -20,7 +20,7 @@ public  abstract class Empleado {
     private int aniosAntiguedad;
     private int telefonoDeContacto;
     private double salario;
-    private String supervisor;
+    private Empleado supervisor;
     
     public Empleado ( String nombre, String apellido, int dni, String direccion, int telefonoDeContacto, double salario){
         this.nombre = nombre;
@@ -29,11 +29,10 @@ public  abstract class Empleado {
         this.direccion = direccion;
         this.telefonoDeContacto = telefonoDeContacto;
         this.salario = salario;
-        this.supervisor = "";
         this.aniosAntiguedad = 0;
     }
     
-    public void cambiarSupervisor( String nuevoSupervisor ){
+    public void cambiarSupervisor( Empleado nuevoSupervisor ){
         this.setSupervisor(nuevoSupervisor);
     }
     
@@ -126,14 +125,14 @@ public  abstract class Empleado {
     /**
      * @return the supervisor
      */
-    public String getSupervisor() {
+    public Empleado getSupervisor() {
         return supervisor;
     }
 
     /**
      * @param supervisor the supervisor to set
      */
-    public void setSupervisor(String supervisor) {
+    public void setSupervisor(Empleado supervisor) {
         this.supervisor = supervisor;
     }
 
