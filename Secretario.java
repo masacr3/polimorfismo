@@ -12,19 +12,18 @@ package main;
 public class Secretario extends Empleado {
     
     private String despacho;
-    private int numeroFax;
     
     
-    public Secretario( String nombre, String apellido, int dni, String direccion, int telefono, double salario, int numeroFax, String despacho ){
-        super(nombre,apellido,dni,direccion,telefono,salario);
+    public Secretario( String nombre, String apellido, int dni, String direccion, int numeroFax, double salario, String despacho ){
+        super(nombre,apellido,dni,direccion,numeroFax,salario);
         this.despacho = despacho;
-        this.numeroFax = numeroFax;
     }
     
     @Override
     public void incremetarSalario() {
         double nuevoSalario = (this.getSalario() * 5 / 100) + this.getSalario() ;
         this.setSalario(nuevoSalario);
+        this.setAniosAntiguedad( this.getAniosAntiguedad() + 1);
     }
 
     /**
@@ -39,20 +38,6 @@ public class Secretario extends Empleado {
      */
     public void setDespacho(String despacho) {
         this.despacho = despacho;
-    }
-
-    /**
-     * @return the numeroFax
-     */
-    public int getNumeroFax() {
-        return numeroFax;
-    }
-
-    /**
-     * @param numeroFax the numeroFax to set
-     */
-    public void setNumeroFax(int numeroFax) {
-        this.numeroFax = numeroFax;
     }
     
 }

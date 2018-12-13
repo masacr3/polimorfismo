@@ -18,16 +18,16 @@ public  abstract class Empleado {
     
     //variable
     private int aniosAntiguedad;
-    private int telefono;
+    private int telefonoDeContacto;
     private double salario;
     private String supervisor;
     
-    public Empleado ( String nombre, String apellido, int dni, String direccion, int telefono, double salario){
+    public Empleado ( String nombre, String apellido, int dni, String direccion, int telefonoDeContacto, double salario){
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.direccion = direccion;
-        this.telefono = telefono;
+        this.telefonoDeContacto = telefonoDeContacto;
         this.salario = salario;
         this.supervisor = "";
         this.aniosAntiguedad = 0;
@@ -110,20 +110,6 @@ public  abstract class Empleado {
     }
 
     /**
-     * @return the telefono
-     */
-    public int getTelefono() {
-        return telefono;
-    }
-
-    /**
-     * @param telefono the telefono to set
-     */
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    /**
      * @return the salario
      */
     public double getSalario() {
@@ -149,5 +135,19 @@ public  abstract class Empleado {
      */
     public void setSupervisor(String supervisor) {
         this.supervisor = supervisor;
+    }
+
+    /**
+     * @return the telefonoDeContacto
+     */
+    public int getTelefonoDeContacto() {
+        return telefonoDeContacto;
+    }
+
+    /**
+     * @param telefonoDeContacto the telefonoDeContacto to set
+     */
+    public void setTelefonoDeContacto(int telefonoDeContacto) {
+        this.telefonoDeContacto = telefonoDeContacto;
     }
 }
