@@ -54,6 +54,42 @@ public class Main {
         jefe.incremetarSalario();
         System.out.println(jefe+"\n");
         
+        v1.setSupervisor(jefe);
+        v2.setSupervisor(jefe);
+        v3.setSupervisor(jefe);
+        
+        System.out.println("vendedor "+v1.getNombre()+" -->supervisor "+v1.getSupervisor().getNombre());
+        System.out.println("vendedor "+v2.getNombre()+" -->supervisor "+v2.getSupervisor().getNombre());
+        System.out.println("vendedor "+v3.getNombre()+" -->supervisor "+v3.getSupervisor().getNombre());
+        
+        
+        System.out.println("\nv1, v2, v3 dados de alta");
+        jefe.darAlta(v1);
+        jefe.darAlta(v2);
+        jefe.darAlta(v3);
+        
+        System.out.println("\nLista de vendedores\n");
+        
+        for ( Vendedor v : jefe.getListaVendedores()){
+            System.out.println("\t"+v.getNombre());
+        }
+        
+        System.out.println("\ndar de baja v2");
+        jefe.darBaja(v2);
+        
+        System.out.println("\nLista de vendedores\n");
+        
+        for ( Vendedor v : jefe.getListaVendedores()){
+            System.out.println("\t"+v.getNombre());
+        }
+        
+        System.out.println("\nSecretario actual del jefe -> "+jefe.getSecretario().getNombre());
+        
+        Secretario s2 = new Secretario("marcelo","tinelli",1111,"av cuevo 2200",11146521,40000,"lc");
+        jefe.cambiarSecretario(s2);
+        
+        System.out.println("cambiar secretario");
+        System.out.println("Secretario actual del jefe -> "+jefe.getSecretario().getNombre());
         
     }
     

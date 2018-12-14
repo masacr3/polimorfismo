@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class JefeDeZona extends Empleado {
     private String despacho;
-    private List<Empleado> listaVendedores = new ArrayList<>();
+    private List<Vendedor> listaVendedores = new ArrayList<>();
     private Secretario secretario;
     private String matricula;
     private String marca;
@@ -79,14 +79,14 @@ public class JefeDeZona extends Empleado {
     /**
      * @return the listaVendedores
      */
-    public List<Empleado> getListaVendedores() {
+    public List<Vendedor> getListaVendedores() {
         return listaVendedores;
     }
 
     /**
      * @param listaVendedores the listaVendedores to set
      */
-    public void setListaVendedores(List<Empleado> listaVendedores) {
+    public void setListaVendedores(List<Vendedor> listaVendedores) {
         this.listaVendedores = listaVendedores;
     }
 
