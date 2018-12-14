@@ -156,7 +156,8 @@ public  abstract class Empleado {
                        "dni : "+this.getDni()+"\n"+
                        "direccion : "+this.getDireccion()+"\n"+
                        "telefono : "+this.getTelefonoDeContacto()+"\n"+
-                       "salario : "+this.getSalario()+"\n"
+                       "salario : "+this.getSalario()+"\n"+
                        "Año antiguedad : "+this.getAniosAntiguedad()+"\n";
+        return datos;
     }
 }
