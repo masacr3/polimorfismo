@@ -47,6 +47,13 @@ public class Main {
         s1.incremetarSalario();
         System.out.println(s1+"\n");
         
+        JefeDeZona jefe = new JefeDeZona("Papa de mati","rea",33331,"av libertador 10",1122334411,100000,"a12",s1,"aa21a","audi","a4");
+        System.out.println("\n------------------\n");
+        System.out.println(jefe+"\n");
+        System.out.println("incremento el salario------- \n");
+        jefe.incremetarSalario();
+        System.out.println(jefe+"\n");
+        
         
     }
     
