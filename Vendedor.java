@@ -109,4 +109,9 @@ public class Vendedor extends Empleado {
         this.porcentaje = porcentaje;
     }
     
+    @Override
+    public String toString(){
+        return this.mostrarDatos()+"Despacho : "+this.getAreaVenta()+"\n"+"Porcentaje Comision : "+this.getPorcentaje()+"\n"+"auto : "+this.getMarca()+","+this.getModelo()+","+this.getMatricula()+"\n"+"Puesto : Vendedor";
+    }
+    
 }

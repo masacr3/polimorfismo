@@ -40,4 +40,9 @@ public class Secretario extends Empleado {
         this.despacho = despacho;
     }
     
+    @Override
+    public String toString(){
+        return this.mostrarDatos()+"Despacho : "+this.getDespacho()+"\n"+"Puesto : Secretario";
+    }
+    
 }

@@ -149,4 +149,14 @@ public  abstract class Empleado {
     public void setTelefonoDeContacto(int telefonoDeContacto) {
         this.telefonoDeContacto = telefonoDeContacto;
     }
+    
+    public String mostrarDatos(){
+        String datos = "nombre: "+this.getNombre()+"\n"+
+                       "apellidos: "+this.getApellido()+"\n"+
+                       "dni : "+this.getDni()+"\n"+
+                       "direccion : "+this.getDireccion()+"\n"+
+                       "telefono : "+this.getTelefonoDeContacto()+"\n"+
+                       "salario : "+this.getSalario()+"\n"
+                       "Año antiguedad : "+this.getAniosAntiguedad()+"\n";
+    }
 }
