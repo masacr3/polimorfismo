@@ -145,4 +145,9 @@ public class JefeDeZona extends Empleado {
     public void setSecretario(Secretario secretario) {
         this.secretario = secretario;
     }
+    
+    @Override
+    public String toString(){
+        return this.mostrarDatos()+"Despacho : "+this.getDespacho()+"\n"+"auto : "+this.getMarca()+","+this.getModelo()+","+this.getMatricula()+"\n"+"Puesto : Jefe de zona";
+    }
 }
