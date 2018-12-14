@@ -111,7 +111,7 @@ public class Vendedor extends Empleado {
     
     @Override
     public String toString(){
-        return this.mostrarDatos()+"Despacho : "+this.getAreaVenta()+"\n"+"Porcentaje Comision : "+this.getPorcentaje()+"\n"+"auto : "+this.getMarca()+","+this.getModelo()+","+this.getMatricula()+"\n"+"Puesto : Vendedor";
+        return this.mostrarDatos()+"Area de ventas : "+this.getAreaVenta()+"\n"+"Porcentaje Comision : "+this.getPorcentaje()+"\n"+"auto : "+this.getMarca()+","+this.getModelo()+","+this.getMatricula()+"\n"+"Puesto : Vendedor";
     }
     
 }
